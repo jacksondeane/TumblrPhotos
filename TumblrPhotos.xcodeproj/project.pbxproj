@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		502DDF5F1D74E25B00BEDBE6 /* PhotoPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502DDF5E1D74E25B00BEDBE6 /* PhotoPostCell.swift */; };
+		509208C01D6B6CE3009BC755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509208BF1D6B6CE3009BC755 /* AppDelegate.swift */; };
+		509208C71D6B6CE3009BC755 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509208C61D6B6CE3009BC755 /* Assets.xcassets */; };
+		509208CA1D6B6CE3009BC755 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509208C81D6B6CE3009BC755 /* LaunchScreen.storyboard */; };
+		509208D21D6B7646009BC755 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509208D11D6B7646009BC755 /* PhotosViewController.swift */; };
+		509208D41D6B85E1009BC755 /* BlogPhotosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509208D31D6B85E1009BC755 /* BlogPhotosViewModel.swift */; };
+		509208DA1D6B9504009BC755 /* PhotoPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509208D91D6B9504009BC755 /* PhotoPost.swift */; };
+		509CD5AD1D7093F2003A4F84 /* TumblrAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509CD5AC1D7093F2003A4F84 /* TumblrAPIProvider.swift */; };
+		50E2C9001D76080E0013B1F8 /* RemoteLoadedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E2C8FF1D76080E0013B1F8 /* RemoteLoadedImage.swift */; };
+		559D3D701F9070163147958F /* Pods_TumblrPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9317962370972AE4316E7B1 /* Pods_TumblrPhotos.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		502DDF5E1D74E25B00BEDBE6 /* PhotoPostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPostCell.swift; sourceTree = "<group>"; };
+		509208BC1D6B6CE3009BC755 /* TumblrPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TumblrPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		509208BF1D6B6CE3009BC755 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		509208C61D6B6CE3009BC755 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		509208C91D6B6CE3009BC755 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		509208CB1D6B6CE3009BC755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509208D11D6B7646009BC755 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		509208D31D6B85E1009BC755 /* BlogPhotosViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogPhotosViewModel.swift; sourceTree = "<group>"; };
+		509208D91D6B9504009BC755 /* PhotoPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPost.swift; sourceTree = "<group>"; };
+		509CD5AC1D7093F2003A4F84 /* TumblrAPIProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TumblrAPIProvider.swift; sourceTree = "<group>"; };
+		50E2C8FF1D76080E0013B1F8 /* RemoteLoadedImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteLoadedImage.swift; sourceTree = "<group>"; };
+		C20C891EC3347DB5C31E6F44 /* Pods-TumblrPhotos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrPhotos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrPhotos/Pods-TumblrPhotos.debug.xcconfig"; sourceTree = "<group>"; };
+		CE83B26ADF810A46D7EEBFC0 /* Pods-TumblrPhotos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TumblrPhotos.release.xcconfig"; path = "Pods/Target Support Files/Pods-TumblrPhotos/Pods-TumblrPhotos.release.xcconfig"; sourceTree = "<group>"; };
+		F9317962370972AE4316E7B1 /* Pods_TumblrPhotos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TumblrPhotos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		509208B91D6B6CE3009BC755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				559D3D701F9070163147958F /* Pods_TumblrPhotos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29D30B84B945974B52898D57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9317962370972AE4316E7B1 /* Pods_TumblrPhotos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		509208B31D6B6CE3009BC755 = {
+			isa = PBXGroup;
+			children = (
+				509208BE1D6B6CE3009BC755 /* TumblrPhotos */,
+				509208BD1D6B6CE3009BC755 /* Products */,
+				63BAB102C4C86D258C2D9AF8 /* Pods */,
+				29D30B84B945974B52898D57 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		509208BD1D6B6CE3009BC755 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				509208BC1D6B6CE3009BC755 /* TumblrPhotos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		509208BE1D6B6CE3009BC755 /* TumblrPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				509208BF1D6B6CE3009BC755 /* AppDelegate.swift */,
+				509208D31D6B85E1009BC755 /* BlogPhotosViewModel.swift */,
+				509208D91D6B9504009BC755 /* PhotoPost.swift */,
+				502DDF5E1D74E25B00BEDBE6 /* PhotoPostCell.swift */,
+				509208D11D6B7646009BC755 /* PhotosViewController.swift */,
+				50E2C8FE1D76055F0013B1F8 /* Resources */,
+				509CD5AC1D7093F2003A4F84 /* TumblrAPIProvider.swift */,
+				50E2C8FF1D76080E0013B1F8 /* RemoteLoadedImage.swift */,
+			);
+			path = TumblrPhotos;
+			sourceTree = "<group>";
+		};
+		50E2C8FE1D76055F0013B1F8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				509208C61D6B6CE3009BC755 /* Assets.xcassets */,
+				509208CB1D6B6CE3009BC755 /* Info.plist */,
+				509208C81D6B6CE3009BC755 /* LaunchScreen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		63BAB102C4C86D258C2D9AF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C20C891EC3347DB5C31E6F44 /* Pods-TumblrPhotos.debug.xcconfig */,
+				CE83B26ADF810A46D7EEBFC0 /* Pods-TumblrPhotos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		509208BB1D6B6CE3009BC755 /* TumblrPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509208CE1D6B6CE3009BC755 /* Build configuration list for PBXNativeTarget "TumblrPhotos" */;
+			buildPhases = (
+				82CCFC3BD42534F1AF57A7AB /* 📦 Check Pods Manifest.lock */,
+				509208B81D6B6CE3009BC755 /* Sources */,
+				509208B91D6B6CE3009BC755 /* Frameworks */,
+				509208BA1D6B6CE3009BC755 /* Resources */,
+				A10AC5021AE77F34D8C51F9E /* 📦 Embed Pods Frameworks */,
+				19DC9AA72A66F82272D06657 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TumblrPhotos;
+			productName = TumblrPhotos;
+			productReference = 509208BC1D6B6CE3009BC755 /* TumblrPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		509208B41D6B6CE3009BC755 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Jackson Deane";
+				TargetAttributes = {
+					509208BB1D6B6CE3009BC755 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 509208B71D6B6CE3009BC755 /* Build configuration list for PBXProject "TumblrPhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 509208B31D6B6CE3009BC755;
+			productRefGroup = 509208BD1D6B6CE3009BC755 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				509208BB1D6B6CE3009BC755 /* TumblrPhotos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		509208BA1D6B6CE3009BC755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509208CA1D6B6CE3009BC755 /* LaunchScreen.storyboard in Resources */,
+				509208C71D6B6CE3009BC755 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19DC9AA72A66F82272D06657 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblrPhotos/Pods-TumblrPhotos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82CCFC3BD42534F1AF57A7AB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A10AC5021AE77F34D8C51F9E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TumblrPhotos/Pods-TumblrPhotos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		509208B81D6B6CE3009BC755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509208C01D6B6CE3009BC755 /* AppDelegate.swift in Sources */,
+				50E2C9001D76080E0013B1F8 /* RemoteLoadedImage.swift in Sources */,
+				509CD5AD1D7093F2003A4F84 /* TumblrAPIProvider.swift in Sources */,
+				509208D21D6B7646009BC755 /* PhotosViewController.swift in Sources */,
+				509208D41D6B85E1009BC755 /* BlogPhotosViewModel.swift in Sources */,
+				502DDF5F1D74E25B00BEDBE6 /* PhotoPostCell.swift in Sources */,
+				509208DA1D6B9504009BC755 /* PhotoPost.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		509208C81D6B6CE3009BC755 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509208C91D6B6CE3009BC755 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		509208CC1D6B6CE3009BC755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		509208CD1D6B6CE3009BC755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		509208CF1D6B6CE3009BC755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20C891EC3347DB5C31E6F44 /* Pods-TumblrPhotos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TumblrPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksondeane.TumblrPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		509208D01D6B6CE3009BC755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE83B26ADF810A46D7EEBFC0 /* Pods-TumblrPhotos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TumblrPhotos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jacksondeane.TumblrPhotos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		509208B71D6B6CE3009BC755 /* Build configuration list for PBXProject "TumblrPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509208CC1D6B6CE3009BC755 /* Debug */,
+				509208CD1D6B6CE3009BC755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509208CE1D6B6CE3009BC755 /* Build configuration list for PBXNativeTarget "TumblrPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509208CF1D6B6CE3009BC755 /* Debug */,
+				509208D01D6B6CE3009BC755 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 509208B41D6B6CE3009BC755 /* Project object */;
+}
