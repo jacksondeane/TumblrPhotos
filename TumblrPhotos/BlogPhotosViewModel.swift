@@ -13,7 +13,7 @@ import RxCocoa
 struct BlogPhotosViewModel {
     
     private struct Constants {
-        static let DeBounceDuration = 1.0
+        static let DebounceDuration = 1.0
     }
     
     private let APIProvider: TumblrAPIProvider
@@ -29,7 +29,7 @@ struct BlogPhotosViewModel {
         self.APIProvider = APIProvider
         
         photoPosts = blogNameVariable.asObservable()
-            .debounce(Constants.DeBounceDuration, scheduler: MainScheduler.instance)
+            .debounce(Constants.DebounceDuration, scheduler: MainScheduler.instance)
             .distinctUntilChanged()
             .flatMapLatest {
                 return APIProvider.loadBlogPhotos($0)
