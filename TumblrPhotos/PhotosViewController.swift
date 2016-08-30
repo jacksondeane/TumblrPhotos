@@ -37,7 +37,6 @@ final class PhotosViewController: UIViewController {
     }
     
     override func viewDidLoad() {
-        
         view.backgroundColor = UIColor.whiteColor()
         definesPresentationContext = true
         
@@ -58,10 +57,10 @@ final class PhotosViewController: UIViewController {
         tableView.registerClass(PhotoPostCell.self, forCellReuseIdentifier: PhotoPostCell.defaultReuseIdentifier)
         tableView.estimatedRowHeight = Constants.TableViewEstimatedCellHeight
         
-        self.blogPhotosViewModel = BlogPhotosViewModel(APIProvider: APIProvider)
-        if let viewModel = self.blogPhotosViewModel {
+        blogPhotosViewModel = BlogPhotosViewModel(APIProvider: APIProvider)
+        if let viewModel = blogPhotosViewModel {
             
-            /* Bind incoming search text values from our UISearchBar to the view model variable. */
+            // Bind incoming search text values from our UISearchBar to the view model variable.
             searchBar.rx_text
                 .bindTo(viewModel.blogNameVariable)
                 .addDisposableTo(disposeBag)
@@ -71,14 +70,12 @@ final class PhotosViewController: UIViewController {
                 .bindTo(viewModel.blogNameVariable)
                 .addDisposableTo(disposeBag)
             
-            /* Bind the photo posts retrieved from the API to drive our UITableView. */
+            // Bind the photo posts retrieved from the API to drive our UITableView.
             viewModel.photoPosts
                 .drive(tableView.rx_itemsWithCellIdentifier(PhotoPostCell.defaultReuseIdentifier)) { (_,  photoPost: PhotoPost, cell: PhotoPostCell) in
                     cell.setupCell(photoPost)
             }.addDisposableTo(disposeBag)
         }
-        
-        
     }
     
 }
